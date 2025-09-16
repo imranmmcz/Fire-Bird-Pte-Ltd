@@ -4,39 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Fire Bird Pte Ltd</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#insights">Insights</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="Fire Bird Pte Ltd Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="index.html#sectors">Sectors</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
+
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#sectors">Sectors</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section id="about">
-            <h1>Our Story</h1>
-            <p>Fire Bird Pte Ltd is a consulting firm based in Singapore that connects European expertise with fast-growing markets in Southeast Asia, the Middle East, and beyond.</p>
+        <!-- About Hero Section -->
+        <section class="hero-about">
+            <div class="container">
+                <h1>Pioneering Growth, Building Bridges</h1>
+                <p>We are a dedicated team of experts committed to turning cross-border challenges into strategic advantages.</p>
+            </div>
         </section>
-        <section id="mission">
-            <h2>Our Mission</h2>
-            <p>CREATE A MODERN & PROFESSIONAL WEB DESIGN</p>
+
+        <!-- Our Mission Section -->
+        <section class="mission">
+            <div class="container mission-content">
+                <div class="mission-text">
+                    <h2>Our Mission</h2>
+                    <p>Our mission is to empower European businesses by providing them with the strategic insights, local network, and operational support necessary to thrive in the complex and dynamic markets of Southeast Asia and the Middle East. We believe in building lasting partnerships based on trust, integrity, and shared success.</p>
+                </div>
+                <div class="mission-image">
+                    <img src="assets/about-background.jpg" alt="Professional team in a meeting">
+                </div>
+            </div>
         </section>
-        <section id="team">
-            <h2>Meet Our Team</h2>
-            <ul>
-                <li>John Doe - CEO</li>
-                <li>Jane Smith - Consultant</li>
-            </ul>
+
+        <!-- Principles Section -->
+        <section class="principles">
+            <div class="container">
+                 <h2>Our Guiding Principles</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h3>Excellence</h3>
+                        <p>We uphold the highest standards of quality and diligence in every project we undertake.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Integrity</h3>
+                        <p>Our business is built on transparency, honesty, and a strong ethical foundation.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Collaboration</h3>
+                        <p>We work as an extension of your team, fostering open communication and shared goals.</p>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- Leadership Section -->
+        <section class="leadership">
+            <div class="container">
+                <h2>Meet Our Leadership</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="assets/team-member-1.jpg" alt="Photo of Jane Doe">
+                        <h3>Jane Doe</h3>
+                        <p>Founder & CEO</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/team-member-2.jpg" alt="Photo of John Smith">
+                        <h3>John Smith</h3>
+                        <p>Head of Market Strategy</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="assets/team-member-3.jpg" alt="Photo of Emily Chen">
+                        <h3>Emily Chen</h3>
+                        <p>Director, Southeast Asia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <p>&copy; 2023 Fire Bird Pte Ltd</p>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-about">
+                <img src="assets/logo.svg" alt="Fire Bird Pte Ltd Logo" class="footer-logo">
+                <p>Connecting European expertise with Asia's dynamic markets.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html#sectors">Sectors</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>1 Raffles Place<br>Singapore 048616</p>
+                <p>contact@firebird.com</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2024 Fire Bird Pte Ltd. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
