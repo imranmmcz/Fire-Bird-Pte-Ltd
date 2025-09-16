@@ -3,54 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fire Bird Pte Ltd</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Fire Bird Pte Ltd - Your Bridge to Asia's Growth Markets</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#insights">Insights</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="Fire Bird Pte Ltd Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#sectors">Sectors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
+
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#sectors">Sectors</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section id="hero">
-            <h1>Unlock New Opportunities in Southeast Asia, the Middle East, and Beyond</h1>
-            <p>We help European companies establish and develop their activities in promising regions.</p>
-            <button>Learn More</button>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Your Bridge to Asia's Growth Markets</h1>
+                <p>We connect European expertise with fast-growing markets in Southeast Asia, the Middle East and beyond.</p>
+                <a href="#contact" class="btn btn-primary">Explore Opportunities</a>
+            </div>
         </section>
-        <section id="expertise">
-            <h2>Our Expertise</h2>
-            <ul>
-                <li>Solar Energy</li>
-                <li>Telecommunications</li>
-                <li>Fintech</li>
-                <li>Wines & Spirits</li>
-                <li>Recycling</li>
-                <li>Industrial Equipment</li>
-            </ul>
+
+        <!-- Sectors Section -->
+        <section id="sectors" class="sectors">
+            <div class="container">
+                <h2>Sectors of Expertise</h2>
+                <div class="sectors-grid">
+                    <div class="sector-item">
+                        <img src="assets/icon-solar.svg" alt="Solar Energy Icon">
+                        <h3>Solar Energy</h3>
+                    </div>
+                    <div class="sector-item">
+                        <img src="assets/icon-telecom.svg" alt="Telecommunications Icon">
+                        <h3>Telecommunications</h3>
+                    </div>
+                    <div class="sector-item">
+                        <img src="assets/icon-fintech.svg" alt="Fintech Icon">
+                        <h3>Fintech</h3>
+                    </div>
+                    <div class="sector-item">
+                        <img src="assets/icon-wine.svg" alt="Wines & Spirits Icon">
+                        <h3>Wines & Spirits</h3>
+                    </div>
+                    <div class="sector-item">
+                        <img src="assets/icon-recycling.svg" alt="Recycling Icon">
+                        <h3>Recycling</h3>
+                    </div>
+                    <div class="sector-item">
+                        <img src="assets/icon-industrial.svg" alt="Industrial Equipment Icon">
+                        <h3>Industrial Equipment</h3>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Consulting</li>
-                <li>Market Entry</li>
-            </ul>
+
+        <!-- Why Us Section -->
+        <section class="why-us">
+            <div class="container">
+                <h2>Why Fire Bird?</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <span class="feature-number">01</span>
+                        <h3>Deep Market Insight</h3>
+                        <p>Leverage our on-the-ground expertise and extensive network to navigate complex markets with confidence.</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-number">02</span>
+                        <h3>Strategic Partnerships</h3>
+                        <p>We identify and forge strategic alliances that accelerate growth and ensure long-term success for your business.</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-number">03</span>
+                        <h3>End-to-End Support</h3>
+                        <p>From market entry strategy to operational setup, we provide comprehensive support at every stage of your expansion.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="insights">
-            <h2>Our Insights</h2>
-            <ul>
-                <li>Latest News and Articles</li>
-            </ul>
+
+        <!-- Success Snapshot Section -->
+        <section class="snapshot">
+            <div class="container">
+                <h2>A Snapshot of Our Success</h2>
+                 <div class="snapshot-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <p>Successful Market Entries</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15</span>
+                        <p>Years of Combined Experience</p>
+                    </div>
+                     <div class="stat-item">
+                        <span class="stat-number">95%</span>
+                        <p>Client Retention Rate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact" class="cta">
+            <div class="container">
+                <h2>Ready to Expand Your Horizons?</h2>
+                <p>Let's discuss how Fire Bird can help you unlock new opportunities in Asia.</p>
+                <a href="mailto:contact@firebird.com" class="btn btn-light">Get In Touch</a>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Fire Bird Pte Ltd</p>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-about">
+                <img src="assets/logo.svg" alt="Fire Bird Pte Ltd Logo" class="footer-logo">
+                <p>Connecting European expertise with Asia's dynamic markets.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#sectors">Sectors</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>1 Raffles Place<br>Singapore 048616</p>
+                <p>contact@firebird.com</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2024 Fire Bird Pte Ltd. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
