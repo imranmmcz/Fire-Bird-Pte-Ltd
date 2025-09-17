@@ -1,8 +1,8 @@
 /* --- GLOBAL STYLES & VARIABLES --- */
 :root {
     --primary-dark: #0F1B2A;
-    --primary-blue: #0052A3;
-    --accent-red: #9A1B1F;
+    --primary-blue: #0a0bed;
+    --accent-red: #d903c5;
     --light-bg: #F5F7FA;
     --body-text: #333333;
     --white: #FFFFFF;
@@ -146,7 +146,7 @@ section {
     position: relative;
     margin-top: 80px; /* Header height */
 }
-.hero { background-image: linear-gradient(rgba(15, 27, 42, 0.7), rgba(15, 27, 42, 0.7)), url('../assets/hero-background.jpg'); }
+.hero { background-image: linear-gradient(rgba(15, 27, 42, 0.7), rgba(42, 7, 242, 0.7)), url('../assets/hero-background.jpg'); }
 .hero-about { background-image: linear-gradient(rgba(15, 27, 42, 0.6), rgba(15, 27, 42, 0.6)), url('../assets/about-background.jpg'); }
 
 
